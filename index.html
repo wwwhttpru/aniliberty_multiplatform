@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/aniliberty_multiplatform/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Клиент для сайта anilibria.top">
+
+  <!-- iOS meta tags-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="AniLiberty" />
+
+  <!-- icons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+
+  <title>AniLiberty</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Splash screen -->
+  <style>
+    .splash {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .splash {
+        background: #000000;
+      }
+    }
+
+    .splash-logo {
+      width: 160px;
+      height: 160px;
+    }
+
+    .splash.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash" class="splash">
+    <img src="favicon.svg" class="splash-logo" alt="AniLiberty Logo">
+  </div>
+
+  <!-- Splash script -->
+  <script>
+    window.addEventListener('flutter-first-frame', function() {
+      const splash = document.getElementById('splash');
+      splash.classList.add('hidden');
+      splash.addEventListener('transitionend', function() {
+        splash.remove();
+      });
+    });
+  </script>
+
+  <!-- Flutter app -->
+  <script src="flutter_bootstrap.js" async></script>
+
+  <!-- Need to work video_player_web_hls -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"  type="application/javascript"></script>
+</body>
+</html>
