@@ -20,19 +20,16 @@
 
 ## 📥 Скачать
 
-### Android
+### Релизы
 
-- APK файлы доступны в разделе [Releases](https://github.com/wwwhttpru/aniliberty_multiplatform/releases)
+- [Android APK](https://github.com/wwwhttpru/aniliberty_multiplatform/releases)
+- [MacOS DMG](https://github.com/wwwhttpru/aniliberty_multiplatform/releases)
+- [WEB-версия](https://wwwhttpru.github.io/aniliberty_multiplatform/)
 
 ### Другие платформы
 
 - iOS — в разработке
-- Web — ✅ доступно через [GitHub Pages](https://wwwhttpru.github.io/aniliberty_multiplatform/)
-- Desktop (Windows, macOS, Linux) — в разработке
-
-## 🌐 Веб-версия
-
-Веб-версия приложения уже доступна через [GitHub Pages](https://wwwhttpru.github.io/aniliberty_multiplatform/).
+- Desktop (Windows, Linux) — в разработке
 
 ## 🛠️ Технологии
 
