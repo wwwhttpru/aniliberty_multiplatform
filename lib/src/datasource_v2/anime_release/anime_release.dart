@@ -1,0 +1,9 @@
+export 'anime_release_age_rating_model.dart';
+export 'anime_release_episode_model.dart';
+export 'anime_release_member_model.dart';
+export 'anime_release_model.dart';
+export 'anime_release_name_model.dart';
+export 'anime_release_publish_day_model.dart';
+export 'anime_release_season_model.dart';
+export 'anime_release_type_model.dart';
+export 'anime_releases_model.dart';

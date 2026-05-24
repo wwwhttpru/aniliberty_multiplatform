@@ -1,0 +1,11 @@
+export 'anime_catalog_query_model.dart';
+export 'anime_catalog_references_model.dart';
+export 'anime_catalog_release_model.dart';
+export 'references_age_ratings_model.dart';
+export 'references_genres_model.dart';
+export 'references_production_statuses_model.dart';
+export 'references_publish_statuses_model.dart';
+export 'references_seasons_model.dart';
+export 'references_sorting_model.dart';
+export 'references_types_model.dart';
+export 'references_years_model.dart';

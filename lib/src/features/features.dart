@@ -1,0 +1,17 @@
+export 'app/app.dart';
+export 'app_status/app_status.dart';
+export 'auth/auth.dart';
+export 'catalog/catalog.dart';
+export 'feed/feed.dart';
+export 'franchises/franchises.dart';
+export 'genres/genres.dart';
+export 'more/more.dart';
+export 'profile/profile.dart';
+export 'promotions/promotions.dart';
+export 'release/release.dart';
+export 'schedule/schedule.dart';
+export 'search/search.dart';
+export 'settings/settings.dart';
+export 'tab_bar/tab_bar.dart';
+export 'video_content/video_content.dart';
+export 'video_player/video_player.dart';

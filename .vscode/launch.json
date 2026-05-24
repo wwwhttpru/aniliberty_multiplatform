@@ -1,0 +1,21 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "anilibria-multiplatform (dev)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "anilibria-multiplatform (web developer)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_web.dart",
+            "deviceId": "chrome"
+        }
+    ]
+}

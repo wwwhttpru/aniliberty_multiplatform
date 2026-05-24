@@ -1,0 +1,87 @@
+name: aniliberty_multiplatform
+description: "Клиент для сайта AniLibria.tv"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+  flutter: 3.44.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
+  # Annotation
+  meta: ^1.17.0
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.10.0
+
+  # Analytics
+  #  sentry: ^8.14.2
+  #  sentry_flutter: ^8.14.2
+
+  # Di
+  yx_scope: ^1.2.0
+  yx_scope_flutter: ^1.2.0
+
+  # State manager
+  yx_state: ^1.0.0
+  yx_state_flutter: ^1.0.0
+  yx_state_transformers: ^1.0.0
+
+  # Navigation
+  yx_navigation: ^1.0.0
+  yx_navigation_flutter: ^1.0.0
+
+  # Network
+  dio: ^5.9.1
+  brotli: ^0.6.0
+
+  # Widget
+  cupertino_icons: ^1.0.8
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.2.3
+  dynamic_color: ^1.8.1
+
+  # Util
+  url_launcher: ^6.3.2
+  rxdart: ^0.28.0
+  collection: ^1.19.1
+  stack_trace: ^1.12.1
+  web: ^1.1.1
+
+  # Storage
+  flutter_secure_storage: ^10.0.0
+  drift: ^2.30.1
+  drift_flutter: ^0.2.8
+
+  # Video player
+  video_player: ^2.10.1
+  video_player_web: ^2.4.0
+  video_player_web_hls: ^1.3.0
+
+dev_dependencies:
+  # Code gen
+  build_runner: ^2.10.5
+  freezed: ^3.2.4
+  json_serializable: ^6.12.0
+  drift_dev: ^2.30.1
+
+  # Linter
+  #flutter_lints: ^4.0.0
+  surf_lint_rules: ^4.0.0
+flutter:
+  uses-material-design: true
+
+  shaders:
+    - lib/src/core/widget/shimmer/shimmer.frag

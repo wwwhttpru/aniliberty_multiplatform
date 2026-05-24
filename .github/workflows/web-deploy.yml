@@ -1,0 +1,55 @@
+name: Deploy web to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+          flutter-version-file: pubspec.yaml
+
+      - name: Compute base-href
+        id: pages
+        shell: bash
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+
+          if [[ "$REPO_NAME" == *.github.io ]]; then
+            BASE_HREF="/"
+          else
+            BASE_HREF="/${REPO_NAME}/"
+          fi
+
+          echo "base_href=$BASE_HREF" >> $GITHUB_OUTPUT
+
+      - name: Pub get dependencies
+        run: flutter pub get
+
+      - name: Codegen
+        run: flutter pub run build_runner build -d
+
+      - name: Build web
+        run: |
+          flutter build web --wasm --release \
+            --target lib/main_web.dart \
+            --base-href "${{ steps.pages.outputs.base_href }}"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: build/web
+          force_orphan: true
