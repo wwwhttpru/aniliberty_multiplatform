@@ -76,10 +76,12 @@ class ReleaseContainerScope
 /// Holder for Release Container.
 /// {@endtemplate}
 class ReleaseContainerHolder
-    extends BaseDataScopeHolder<
-        ReleaseContainerOutputScope,
-        ReleaseContainerScope,
-        ReleaseContainerInputScope> {
+    extends
+        BaseDataScopeHolder<
+          ReleaseContainerOutputScope,
+          ReleaseContainerScope,
+          ReleaseContainerInputScope
+        > {
   /// {@macro release_container_holder}
   ReleaseContainerHolder();
 

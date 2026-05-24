@@ -5,8 +5,9 @@ import 'package:yx_state/yx_state.dart';
 class ReleasesSM extends StateManager<ReleasesState> {
   final IReleaseRepository _repository;
 
-  ReleasesSM({required this._repository})
-    : super(const ReleasesState.idle());
+  ReleasesSM({
+    required this._repository,
+  }) : super(const ReleasesState.idle());
 
   void readLatest(int limit) {
     handle((emit) async {

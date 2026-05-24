@@ -9,8 +9,7 @@ enum AppThemeMode {
   dark('dark'),
 
   /// System theme (follows device settings)
-  system('system')
-  ;
+  system('system');
 
   /// {@macro app_theme_mode}
   const AppThemeMode(this.code);

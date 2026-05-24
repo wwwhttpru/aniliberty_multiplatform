@@ -138,7 +138,9 @@ class ApiUrlInteractor implements IApiUrlInteractor {
 
     // If failed base URL is found, switch to it and mark it as unknown.
     if (maybeFailedBaseUrl != null) {
-      _logger.debug('Switching to failed base URL: ${maybeFailedBaseUrl.baseUrl}');
+      _logger.debug(
+        'Switching to failed base URL: ${maybeFailedBaseUrl.baseUrl}',
+      );
       _baseUrlStates[maybeFailedBaseUrl.baseUrl] = ApiBaseUrlState(
         baseUrl: maybeFailedBaseUrl.baseUrl,
         status: ApiBaseUrlStatus.unknown,

@@ -5,8 +5,7 @@ enum UrlLauncherState {
   idle,
   progress,
   success,
-  error
-  ;
+  error;
 
   bool get isIdle => this == idle;
   bool get isProgress => this == progress;

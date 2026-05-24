@@ -23,8 +23,7 @@ enum LogLevel {
 
   /// One or more key business functionalities are not working
   /// and the whole system doesn’t fulfill the business functionalities.
-  fatal
-  ;
+  fatal;
 
   const LogLevel();
 }

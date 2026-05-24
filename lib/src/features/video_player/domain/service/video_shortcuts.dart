@@ -13,8 +13,7 @@ enum VideoShortcut {
   seekBackward,
 
   /// Toggle fullscreen
-  toggleFullscreen
-  ;
+  toggleFullscreen;
 
   /// Get the key of the shortcut
   LogicalKeyboardKey get key => switch (this) {

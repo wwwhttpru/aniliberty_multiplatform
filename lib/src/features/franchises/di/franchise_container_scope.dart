@@ -69,10 +69,12 @@ class FranchiseContainerScope
 /// Holder for Franchise Container.
 /// {@endtemplate}
 class FranchiseContainerHolder
-    extends BaseDataScopeHolder<
-        FranchiseContainerOutputScope,
-        FranchiseContainerScope,
-        FranchiseContainerInputScope> {
+    extends
+        BaseDataScopeHolder<
+          FranchiseContainerOutputScope,
+          FranchiseContainerScope,
+          FranchiseContainerInputScope
+        > {
   /// {@macro franchise_container_holder}
   FranchiseContainerHolder();
 

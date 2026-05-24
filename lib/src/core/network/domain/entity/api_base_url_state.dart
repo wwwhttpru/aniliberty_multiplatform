@@ -45,8 +45,7 @@ enum ApiBaseUrlStatus {
   success,
 
   /// Failed status.
-  failed
-  ;
+  failed;
 
   /// Returns true if the status is unknown.
   bool get isUnknown => this == unknown;

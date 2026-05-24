@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 enum PlayPauseButtonState {
   progress,
   play,
-  pause
-  ;
+  pause;
 
   double get value => switch (this) {
     PlayPauseButtonState.progress => 0.0,

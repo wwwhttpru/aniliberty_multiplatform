@@ -6,8 +6,7 @@ enum AppLanguage {
   ru('ru'),
 
   /// English
-  en('en')
-  ;
+  en('en');
 
   /// {@macro app_language}
   const AppLanguage(this.code);

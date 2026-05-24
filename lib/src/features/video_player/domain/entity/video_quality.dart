@@ -11,8 +11,7 @@ enum VideoQuality {
   hd('hd'),
 
   /// SD (standard definition) quality
-  sd('sd')
-  ;
+  sd('sd');
 
   /// Get the name of the quality
   String get name => switch (this) {

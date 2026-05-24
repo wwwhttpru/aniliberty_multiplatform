@@ -20,8 +20,7 @@ enum PlatformType {
   linux,
 
   /// Web platform
-  web
-  ;
+  web;
 
   /// Returns true if the platform is mobile (iOS, Android)
   bool get isMobile => switch (this) {
