@@ -1,0 +1,8 @@
+# Exclude bundled drift / sqlite3 web artifacts from GitHub language stats.
+# These are downloaded from upstream releases, not written by us.
+web/drift_worker.js linguist-vendored
+web/*.wasm linguist-vendored
+
+# Generated Dart code (build_runner / freezed / drift / json_serializable)
+*.g.dart linguist-generated
+*.freezed.dart linguist-generated
