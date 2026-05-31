@@ -20,7 +20,7 @@ class AppDriftDatabase extends _$AppDriftDatabase {
 
           /// See https://drift.simonbinder.eu/platforms/web/ to get more information about the web options.
           web: DriftWebOptions(
-            sqlite3Wasm: Uri.parse('sqlite3_2.9.4.wasm'),
+            sqlite3Wasm: Uri.parse('sqlite3_3.3.2.wasm'),
             driftWorker: Uri.parse('drift_worker.js'),
           ),
         ),
