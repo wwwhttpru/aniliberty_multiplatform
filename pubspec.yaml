@@ -10,11 +10,18 @@ environment:
   sdk: ^3.12.0
   flutter: 3.44.0
 
+workspace:
+  - packages/kira_ui
+
 dependencies:
   flutter:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+
+  # Design system
+  kira_ui:
+    path: packages/kira_ui
 
   # Localization
   flutter_localizations:
