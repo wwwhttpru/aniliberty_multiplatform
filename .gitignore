@@ -141,3 +141,6 @@ lib/src/core/localization/generated/
 
 pubspec.lock
 .metadata
+
+# Claude Code — keep shared settings, ignore personal/local overrides
+.claude/settings.local.json
