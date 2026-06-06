@@ -12,6 +12,7 @@ environment:
 
 workspace:
   - packages/kira_ui
+  - packages/kira_gallery
 
 dependencies:
   flutter:
