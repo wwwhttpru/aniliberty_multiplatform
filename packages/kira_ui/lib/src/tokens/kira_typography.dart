@@ -42,6 +42,8 @@ class KiraTypography extends ThemeExtension<KiraTypography> {
     required this.monoSm,
     required this.monoXs,
     required this.numeric,
+    required this.titleCard,
+    required this.labelNav,
   });
 
   /// The canonical KIRA type ramp.
@@ -155,6 +157,18 @@ class KiraTypography extends ThemeExtension<KiraTypography> {
       height: 24 / 22,
       letterSpacing: -0.2,
     ),
+    titleCard: TextStyle(
+      fontFamily: KiraFontFamily.body,
+      fontWeight: FontWeight.w600,
+      fontSize: 14,
+      height: 18 / 14,
+    ),
+    labelNav: TextStyle(
+      fontFamily: KiraFontFamily.body,
+      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      height: 20 / 14,
+    ),
   );
 
   // Display.
@@ -184,6 +198,12 @@ class KiraTypography extends ThemeExtension<KiraTypography> {
   /// Tabular display figures (ranks, counters).
   final TextStyle numeric;
 
+  /// Card title (compact, body family).
+  final TextStyle titleCard;
+
+  /// Navigation item label.
+  final TextStyle labelNav;
+
   @override
   KiraTypography copyWith({
     TextStyle? display2xl,
@@ -201,6 +221,8 @@ class KiraTypography extends ThemeExtension<KiraTypography> {
     TextStyle? monoSm,
     TextStyle? monoXs,
     TextStyle? numeric,
+    TextStyle? titleCard,
+    TextStyle? labelNav,
   }) {
     return KiraTypography(
       display2xl: display2xl ?? this.display2xl,
@@ -218,6 +240,8 @@ class KiraTypography extends ThemeExtension<KiraTypography> {
       monoSm: monoSm ?? this.monoSm,
       monoXs: monoXs ?? this.monoXs,
       numeric: numeric ?? this.numeric,
+      titleCard: titleCard ?? this.titleCard,
+      labelNav: labelNav ?? this.labelNav,
     );
   }
 
@@ -240,6 +264,8 @@ class KiraTypography extends ThemeExtension<KiraTypography> {
       monoSm: TextStyle.lerp(monoSm, other.monoSm, t)!,
       monoXs: TextStyle.lerp(monoXs, other.monoXs, t)!,
       numeric: TextStyle.lerp(numeric, other.numeric, t)!,
+      titleCard: TextStyle.lerp(titleCard, other.titleCard, t)!,
+      labelNav: TextStyle.lerp(labelNav, other.labelNav, t)!,
     );
   }
 }

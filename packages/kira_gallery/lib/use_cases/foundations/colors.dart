@@ -31,6 +31,13 @@ Widget buildColorsUseCase(BuildContext context) {
     ('border-strong', c.borderStrong),
     ('scrim', c.scrim),
     ('overlay-soft', c.overlaySoft),
+    ('glass-fill', c.glassFill),
+    ('glass-border', c.glassBorder),
+    ('icon-default', c.iconDefault),
+    ('icon-muted', c.iconMuted),
+    ('icon-active', c.iconActive),
+    ('state-accent-tint', c.stateAccentTint),
+    ('state-accent-outline', c.stateAccentOutline),
   ];
 
   return ShowcaseScaffold(

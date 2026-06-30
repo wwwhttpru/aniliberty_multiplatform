@@ -45,10 +45,13 @@ abstract final class KiraPalette {
   /// Ink used on top of bright accent fills (near-black).
   static const Color onAccent = Color(0xFF0A0510);
 
-  // Alpha — translucent overlays. ARGB with baked opacity:
-  // white 7% / 14%, black 50% / 55%.
+  // Alpha — translucent overlays. ARGB with baked opacity.
   static const Color whiteA07 = Color(0x12FFFFFF);
+  static const Color whiteA10 = Color(0x1AFFFFFF);
   static const Color whiteA14 = Color(0x24FFFFFF);
+  static const Color whiteA18 = Color(0x2EFFFFFF);
   static const Color blackA50 = Color(0x80000000);
   static const Color blackA55 = Color(0x8C000000);
+  static const Color magentaA15 = Color(0x26FF2E8A);
+  static const Color magentaA50 = Color(0x80FF2E8A);
 }

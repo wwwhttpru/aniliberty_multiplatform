@@ -29,6 +29,8 @@ Widget buildTypographyUseCase(BuildContext context) {
     ('Mono/SM', t.monoSm, 'Сезон 2 · S2'),
     ('Mono/XS', t.monoXs, 'Ep 12'),
     ('Numeric', t.numeric, '1 250'),
+    ('Title/Card', t.titleCard, 'Магическая битва'),
+    ('Label/Nav', t.labelNav, 'Каталог'),
   ];
 
   return ShowcaseScaffold(

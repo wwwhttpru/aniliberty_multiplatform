@@ -33,6 +33,13 @@ class KiraColors extends ThemeExtension<KiraColors> {
     required this.danger,
     required this.scrim,
     required this.overlaySoft,
+    required this.glassFill,
+    required this.glassBorder,
+    required this.iconDefault,
+    required this.iconMuted,
+    required this.iconActive,
+    required this.stateAccentTint,
+    required this.stateAccentOutline,
   });
 
   /// The single (dark) mode of the KIRA palette.
@@ -61,6 +68,13 @@ class KiraColors extends ThemeExtension<KiraColors> {
     danger: KiraPalette.danger,
     scrim: KiraPalette.blackA55,
     overlaySoft: KiraPalette.blackA50,
+    glassFill: KiraPalette.whiteA10,
+    glassBorder: KiraPalette.whiteA18,
+    iconDefault: KiraPalette.paper300,
+    iconMuted: KiraPalette.paper500,
+    iconActive: KiraPalette.magenta500,
+    stateAccentTint: KiraPalette.magentaA15,
+    stateAccentOutline: KiraPalette.magentaA50,
   );
 
   /// Page background — the near-black base.
@@ -109,6 +123,19 @@ class KiraColors extends ThemeExtension<KiraColors> {
   final Color scrim;
   final Color overlaySoft;
 
+  /// Translucent glass surfaces (glass navbars / panels).
+  final Color glassFill;
+  final Color glassBorder;
+
+  /// Icon tints.
+  final Color iconDefault;
+  final Color iconMuted;
+  final Color iconActive;
+
+  /// Accent state layers — hover/selected tint and focus outline.
+  final Color stateAccentTint;
+  final Color stateAccentOutline;
+
   @override
   KiraColors copyWith({
     Color? bg,
@@ -135,6 +162,13 @@ class KiraColors extends ThemeExtension<KiraColors> {
     Color? danger,
     Color? scrim,
     Color? overlaySoft,
+    Color? glassFill,
+    Color? glassBorder,
+    Color? iconDefault,
+    Color? iconMuted,
+    Color? iconActive,
+    Color? stateAccentTint,
+    Color? stateAccentOutline,
   }) {
     return KiraColors(
       bg: bg ?? this.bg,
@@ -161,6 +195,13 @@ class KiraColors extends ThemeExtension<KiraColors> {
       danger: danger ?? this.danger,
       scrim: scrim ?? this.scrim,
       overlaySoft: overlaySoft ?? this.overlaySoft,
+      glassFill: glassFill ?? this.glassFill,
+      glassBorder: glassBorder ?? this.glassBorder,
+      iconDefault: iconDefault ?? this.iconDefault,
+      iconMuted: iconMuted ?? this.iconMuted,
+      iconActive: iconActive ?? this.iconActive,
+      stateAccentTint: stateAccentTint ?? this.stateAccentTint,
+      stateAccentOutline: stateAccentOutline ?? this.stateAccentOutline,
     );
   }
 
@@ -192,6 +233,17 @@ class KiraColors extends ThemeExtension<KiraColors> {
       danger: Color.lerp(danger, other.danger, t)!,
       scrim: Color.lerp(scrim, other.scrim, t)!,
       overlaySoft: Color.lerp(overlaySoft, other.overlaySoft, t)!,
+      glassFill: Color.lerp(glassFill, other.glassFill, t)!,
+      glassBorder: Color.lerp(glassBorder, other.glassBorder, t)!,
+      iconDefault: Color.lerp(iconDefault, other.iconDefault, t)!,
+      iconMuted: Color.lerp(iconMuted, other.iconMuted, t)!,
+      iconActive: Color.lerp(iconActive, other.iconActive, t)!,
+      stateAccentTint: Color.lerp(stateAccentTint, other.stateAccentTint, t)!,
+      stateAccentOutline: Color.lerp(
+        stateAccentOutline,
+        other.stateAccentOutline,
+        t,
+      )!,
     );
   }
 }
